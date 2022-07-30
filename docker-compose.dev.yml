@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  server:
+    build: .
+    command: npm run dev
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - C:\Users\user\Desktop\exchange-API:/exchange-API
